@@ -73,7 +73,7 @@ ON ce.emp_no = de.emp_no
 GROUP BY de.dept_no
 ORDER BY de.dept_no; 
 
--- join employee ,dept_emp and salries table for current employee info
+-- join employee ,dept_emp and salaries table for current employee info
 SELECT e.emp_no, 
 e.first_name, 
 e.last_name,
