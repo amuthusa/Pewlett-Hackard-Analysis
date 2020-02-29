@@ -48,7 +48,7 @@ SELECT emp_no,
  title,
  from_date,
  salary
- INTO current_emp_details
+ INTO unique_current_emp_details
 FROM
 (SELECT *, ROW_NUMBER(*)
  OVER 
@@ -59,6 +59,12 @@ FROM
  FROM current_emp_details 
 ) current_emp_row_number
 WHERE rn=1;
+
+SELECT title, 
+from_date,
+COUNT(title) FROM
+unique_current_emp_details
+GROUP BY title, from_date;
 
 SELECT e.emp_no,
 e.first_name,
