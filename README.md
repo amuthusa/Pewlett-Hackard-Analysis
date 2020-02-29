@@ -6,7 +6,7 @@
 ## Analysis:
 
 ### Step 1:
-   To satisfy the current need for Pewlett Hackard the current legacy system of CSV and VBA may not be a good option. As a first step, we will migrate the data from the CSV file into a SQL Database. Having understood their CSV data we have a schema design that would better represent the data in the SQL world ![Pewlett Hackard ERD](images/EmployeeDB.png)
+   To satisfy the current need for Pewlett Hackard the current legacy system of CSV and VBA may not be a good option. As a first step, we will migrate the data from the CSV file into a SQL Database. Having understood their CSV data we have a schema design using Entity Relationship Diagram (ERD) that would better represent the data in the SQL world ![Pewlett Hackard ERD](images/EmployeeDB.png)
    
 ### Step 2:
    Find the employees who are either retired or might be retiring based on age and hiring date. In Pewlett Hackward case we would classify any employee who is age 65 to 68 and with the company for 32 to 35 would be considered as employees who might be either retired or retiring soon. Knowing the data on how many employees fall under this category would help them to plan. Using a simple query and creating a table would help us to further drill down on these employees
